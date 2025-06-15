@@ -31,6 +31,14 @@ Para implantar no Vercel, defina essas mesmas variáveis de ambiente no painel d
 npm start
 ```
 
+## Build de produção
+
+Para gerar uma versão otimizada do projeto, execute:
+
+```bash
+npm run build
+```
+
 ## Licença
 
 Distribuído sob a licença [MIT](LICENSE).
