@@ -24,6 +24,8 @@ npm install
 
 Crie um arquivo `.env` a partir de `.env.example` preenchendo `REACT_APP_SUPABASE_URL` e `REACT_APP_SUPABASE_KEY`.
 
+Para implantar no Vercel, defina essas mesmas variáveis de ambiente no painel do projeto. Opcionalmente, utilize o arquivo `vercel.json` já incluso para configurar a pasta de saída `build/`.
+
 ```bash
 # Iniciar a aplicação
 npm start
