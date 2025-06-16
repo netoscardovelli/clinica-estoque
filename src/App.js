@@ -3,9 +3,8 @@ import { createClient } from '@supabase/supabase-js';
 import { Plus, Search, AlertTriangle, Package, TrendingUp, Calendar, Edit2, Trash2, Eye } from 'lucide-react';
 
 // Configuração do Supabase
-const supabaseUrl = 'https://jmpjipyzccpeuimnwuqh.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImptcGppcHl6Y2NwZXVpbW53dXFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5MzkyNTQsImV4cCI6MjA2NTUxNTI1NH0.M5kB9kMApT4By7b8Vdl7VZMsS0UlzqHb1VtMTePddoI';
-
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const MedicalInventorySystem = () => {
